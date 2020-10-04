@@ -1,0 +1,24 @@
+/*  General */
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a {
+  color: #ffc600;
+}
+h2 {
+  font-size: 12px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:url('https://unsplash.it/1500/1000?image=1021');
+  background-size:cover;
+}
