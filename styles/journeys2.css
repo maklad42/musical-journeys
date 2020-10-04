@@ -1,0 +1,91 @@
+@charset: 'utf-8';
+
+body {
+  width: 100%;
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+#wrapper {
+  width: 800px;
+  margin: auto;
+}
+
+.album {
+  width: 780px;
+  margin: auto;
+  margin: 20px;
+  border: solid #2f2f2f 1px;
+  border-bottom: solid #4f4f4f 2px;
+  box-shadow: 0 10px 10px black;
+  background: -webkit-linear-gradient(#4f4f4f, #2f2f2f);
+}
+
+.album:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.cover {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.covimg {
+  width: 100px;
+  height: 100px;
+}
+
+div.album:nth-of-type(odd) .cover {
+  position: absolute;
+  margin-left: 670px;
+}
+
+div.album:nth-of-type(even) .cover {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.albDetails {
+  position: absolute;
+  width: 630px;
+  height: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+div.album:nth-of-type(odd) .albDetails {
+  position: absolute;
+  text-align: right;
+}
+
+div.album:nth-of-type(even) .albDetails {
+  position: absolute;
+  margin-left: 120px;
+}
+
+.link {
+  /*background-color: #3f3f3f;*/
+  background-image: url('../images/cnx.jpg');
+  width:60%;
+  margin: auto;
+  border: solid gray 1px;
+  margin-top:  120px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.nxt {
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  color: #ff7011;
+  cursor: pointer;
+}
